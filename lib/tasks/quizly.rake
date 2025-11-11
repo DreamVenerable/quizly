@@ -5,6 +5,10 @@ require "yaml"
 require "json"
 
 namespace :quizly do
+  desc "Copies Quizly migrations to the host application"
+  task "install:migrations" do
+    Rake::Task["railties:install:migrations"].invoke("quizly")
+  end
   desc "Import quizzes from a YAML or JSON file"
   task :import, [:file] => :environment do |t, args|
     file_path = args[:file]
