@@ -1,0 +1,10 @@
+# frozen_string_literal: true
+
+module Quizly
+  class Choice < ApplicationRecord
+    belongs_to :question
+
+    validates :content, presence: true
+    validates :is_correct, inclusion: { in: [true, false] }
+  end
+end

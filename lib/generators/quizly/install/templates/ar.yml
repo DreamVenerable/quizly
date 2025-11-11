@@ -1,0 +1,39 @@
+ar:
+  quizly:
+    quiz:
+      title: "عنوان الاختبار"
+      questions_count: "عدد الأسئلة"
+      attempts_count: "عدد المحاولات"
+    question:
+      content: "محتوى السؤال"
+      choices_count: "عدد الخيارات"
+    choice:
+      content: "محتوى الخيار"
+      is_correct: "هل صحيح؟"
+    attempt:
+      score: "النتيجة"
+      percentage: "النسبة المئوية"
+      taken_at: "تاريخ المحاولة"
+    feedback:
+      correct: "صحيح!"
+      incorrect: "غير صحيح."
+      not_attempted: "لم تتم الإجابة"
+    buttons:
+      start_quiz: "ابدأ الاختبار"
+      submit_quiz: "إرسال الاختبار"
+      view_results: "عرض النتائج"
+      back_to_quizzes: "العودة إلى الاختبارات"
+    messages:
+      quiz_created: "تم إنشاء الاختبار بنجاح."
+      quiz_updated: "تم تحديث الاختبار بنجاح."
+      quiz_destroyed: "تم حذف الاختبار بنجاح."
+      question_created: "تم إنشاء السؤال بنجاح."
+      question_updated: "تم تحديث السؤال بنجاح."
+      question_destroyed: "تم حذف السؤال بنجاح."
+      choice_created: "تم إنشاء الخيار بنجاح."
+      choice_updated: "تم تحديث الخيار بنجاح."
+      choice_destroyed: "تم حذف الخيار بنجاح."
+      attempt_recorded: "تم تسجيل المحاولة بنجاح."
+      quiz_completed: "لقد أكملت الاختبار!"
+      no_questions: "لا يوجد أسئلة لهذا الاختبار بعد."
+      quiz_not_found: "الاختبار غير موجود."

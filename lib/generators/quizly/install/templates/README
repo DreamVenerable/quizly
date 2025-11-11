@@ -1,0 +1,31 @@
+# Quizly Installation
+
+To install Quizly, run the generator:
+
+```bash
+rails generate quizly:install
+```
+
+This will:
+
+1.  Copy all necessary migrations to your application.
+2.  Copy locale files (`en.yml`, `ar.yml`) to `config/locales`.
+3.  Create an initializer file (`config/initializers/quizly.rb`) for configuration.
+
+After running the generator, you should run your migrations:
+
+```bash
+rails db:migrate
+```
+
+## Configuration
+
+Edit `config/initializers/quizly.rb` to customize settings:
+
+```ruby
+Quizly.configure do |config|
+  # config.default_locale = :en
+  # config.shuffle_questions = true
+  # config.shuffle_choices = true
+end
+```
