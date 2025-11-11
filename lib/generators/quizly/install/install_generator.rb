@@ -11,13 +11,12 @@ module Quizly
         rake "quizly:install:migrations"
       end
 
-      def copy_locale_files
-        copy_file "en.yml", "config/locales/quizly.en.yml"
-        copy_file "ar.yml", "config/locales/quizly.ar.yml"
+      def copy_locales
+        directory 'locales', 'config/locales/quizly'
       end
 
-      def create_initializer_file
-        copy_file "initializer.rb", "config/initializers/quizly.rb"
+      def copy_initializer
+        template 'initializer.rb', 'config/initializers/quizly.rb'
       end
 
       def show_readme

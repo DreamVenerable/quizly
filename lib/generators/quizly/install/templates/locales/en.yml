@@ -1,0 +1,39 @@
+en:
+  quizly:
+    quiz:
+      title: "Quiz Title"
+      questions_count: "Questions Count"
+      attempts_count: "Attempts Count"
+    question:
+      content: "Question Content"
+      choices_count: "Choices Count"
+    choice:
+      content: "Choice Content"
+      is_correct: "Is Correct?"
+    attempt:
+      score: "Score"
+      percentage: "Percentage"
+      taken_at: "Taken At"
+    feedback:
+      correct: "Correct!"
+      incorrect: "Incorrect."
+      not_attempted: "Not Attempted"
+    buttons:
+      start_quiz: "Start Quiz"
+      submit_quiz: "Submit Quiz"
+      view_results: "View Results"
+      back_to_quizzes: "Back to Quizzes"
+    messages:
+      quiz_created: "Quiz was successfully created."
+      quiz_updated: "Quiz was successfully updated."
+      quiz_destroyed: "Quiz was successfully destroyed."
+      question_created: "Question was successfully created."
+      question_updated: "Question was successfully updated."
+      question_destroyed: "Question was successfully destroyed."
+      choice_created: "Choice was successfully created."
+      choice_updated: "Choice was successfully updated."
+      choice_destroyed: "Choice was successfully destroyed."
+      attempt_recorded: "Attempt was successfully recorded."
+      quiz_completed: "You have completed the quiz!"
+      no_questions: "This quiz has no questions yet."
+      quiz_not_found: "Quiz not found."

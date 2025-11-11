@@ -4,8 +4,8 @@ source "https://rubygems.org"
 
 # Specify your gem's dependencies in quizly.gemspec
 
-gem "rails", ">= 8.0.0"
-gem "sqlite3", ">= 1.4"
+gem "rails", ">= 8.1.0"
+gem "sqlite3", ">= 2.1"
 
 gemspec
 
