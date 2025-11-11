@@ -18,6 +18,8 @@ jobs:
         with:
           ruby-version: ${{ matrix.ruby-version }}
           bundler-cache: true
+      - name: Add Linux platform to Gemfile.lock
+        run: bundle lock --add-platform x86_64-linux
       - name: Run RSpec
         run: |
           bundle exec rspec --format documentation
