@@ -17,9 +17,11 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: ${{ matrix.ruby-version }}
-          bundler-cache: true
+          bundler-cache: false # Disable bundler-cache to manually manage bundle install
       - name: Add Linux platform to Gemfile.lock
         run: bundle lock --add-platform x86_64-linux
+      - name: Install dependencies
+        run: bundle install
       - name: Run RSpec
         run: |
           bundle exec rspec --format documentation
