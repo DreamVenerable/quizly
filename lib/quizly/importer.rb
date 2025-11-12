@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "yaml"
 require "json"
 
@@ -41,7 +43,7 @@ module Quizly
         end
         puts "Imported quiz: #{quiz.title}"
       end
-    rescue => e
+    rescue StandardError => e
       puts "❌ Error importing quiz: #{e.message}"
     end
   end

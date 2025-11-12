@@ -9,7 +9,7 @@ RSpec.describe Quizly::AttemptAnswer, type: :model do
   let(:attempt) { Quizly::Attempt.create!(quiz: quiz) }
 
   it "enforces uniqueness of question per attempt" do
-    first = Quizly::AttemptAnswer.create!(attempt: attempt, question: question, choice: choice)
+    Quizly::AttemptAnswer.create!(attempt: attempt, question: question, choice: choice)
     dup = Quizly::AttemptAnswer.new(attempt: attempt, question: question, choice: choice)
     expect(dup).not_to be_valid
     expect(dup.errors[:question_id]).to be_present

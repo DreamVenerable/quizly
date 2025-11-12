@@ -13,8 +13,8 @@ RSpec.describe Quizly::Attempt, type: :model do
   end
 
   it "computes score and percentage" do
-    q1, a1, b1 = add_question_with_choices(content: "Q1", correct: "A")
-    q2, a2, b2 = add_question_with_choices(content: "Q2", correct: "B")
+    q1, a1, = add_question_with_choices(content: "Q1", correct: "A")
+    q2, a2, = add_question_with_choices(content: "Q2", correct: "B")
 
     attempt = Quizly::Attempt.create!(quiz: quiz)
     # Answer first correctly, second incorrectly

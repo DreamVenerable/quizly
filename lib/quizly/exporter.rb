@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "yaml"
 require "json"
 
@@ -14,7 +16,7 @@ module Quizly
       content = serialize(data)
       File.write(@file_path, content)
       puts "✅ Exported quizzes to #{@file_path} (#{@format} format)"
-    rescue => e
+    rescue StandardError => e
       puts "❌ Error exporting quizzes: #{e.message}"
     end
 

@@ -43,7 +43,7 @@ ActiveRecord::Base.establish_connection(
 ActiveRecord::Schema.verbose = false
 
 # Run engine migrations to define tables
-migrations_path = File.expand_path("../lib/quizly/db/migrate", __dir__)
+migrations_path = File.expand_path("../lib/generators/quizly/install/templates/migrations", __dir__)
 Dir[File.join(migrations_path, "*.rb")].sort.each { |f| require f }
 
 ObjectSpace.each_object(Class).select { |k| k < ActiveRecord::Migration }.each do |migration_class|
